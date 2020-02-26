@@ -65,9 +65,7 @@
         position: relative;
 
         @media #{$mq-tablet-and-up} {
-            &:hover ul,
-            &:focus-within ul {
-                display: block;
+            ul {
                 position: absolute;
                 width: max-content;
             }

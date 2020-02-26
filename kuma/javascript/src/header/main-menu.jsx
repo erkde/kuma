@@ -228,10 +228,7 @@ const _MainMenu = ({ document, locale }: Props) => {
                             onMouseOver={menuMouseoverHandler}
                             onContextMenu={sendMenuItemInteraction}
                             onFocus={sendMenuItemInteraction}
-                            onTouchStart={() => {
-                                // Ultimately, because there's no :hover on
-                                // mobile, we have to compensate for that using
-                                // JavaScript.
+                            onClick={() => {
                                 setShowSubMenu(
                                     showSubMenu === menuEntry.label
                                         ? null
